@@ -1,0 +1,36 @@
+.filterForm {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+  }
+}
+
+.column {
+  flex: 0 0 20%;
+  margin: 10px;
+}
+
+.title {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #707070;
+}
+
+.priceInput {
+  width: 250px;
+  height: 36px;
+  font-size: 18px;
+  color: #505050;
+  border: 1px solid #989898;
+  border-radius: 4px;
+  padding: 5px 10px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+
+  &:hover {
+    border: 1px solid rgba(13, 209, 73, 0.67);
+  }
+}

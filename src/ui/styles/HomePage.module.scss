@@ -1,0 +1,32 @@
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+  pointer-events: all;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &.loading {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.cardWrap {
+  padding: 20px 0;
+
+  @media (max-width: 1100px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.notFound {
+  text-align: center;
+  font-size: 25px;
+}
