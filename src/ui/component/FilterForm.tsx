@@ -35,8 +35,9 @@ export const FilterForm = () => {
             <span className={styles.title}>Программа</span>
             <Select
                items={program}
-               onChange={onProgramChange}
                defaultValue={'Любая'}
+               style={{zIndex: '15'}}
+               onChange={onProgramChange}
                activeValue={currentProgram}
             />
          </div>
@@ -45,6 +46,7 @@ export const FilterForm = () => {
             <span className={styles.title}>Показать банков</span>
             <Select
                defaultValue={'10'}
+               style={{zIndex: '14'}}
                onChange={onLimitChange}
                items={['10', '20', '30', '40', 'Все']}
             />
@@ -53,6 +55,7 @@ export const FilterForm = () => {
          <div className={styles.column}>
             <span className={styles.title}>Сортировать</span>
             <Select
+               style={{zIndex: '13'}}
                onChange={onSortChange}
                defaultValue={currentSort}
                items={['По ставке', 'По платежу']}
